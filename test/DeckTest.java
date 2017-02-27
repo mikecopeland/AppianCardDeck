@@ -1,3 +1,5 @@
+import com.mikecopeland.Cards.Ranks;
+import com.mikecopeland.Cards.Suits;
 import com.mikecopeland.Decks.Deck;
 import org.junit.Assert;
 import org.junit.Test;
@@ -5,7 +7,7 @@ import org.junit.Test;
 import java.security.SecureRandom;
 
 public class DeckTest {
-    private final int NUMBER_OF_CARDS = 52;
+    private final int NUMBER_OF_CARDS = Ranks.values().length * Suits.values().length;
     @Test
     public void testDeckCreation(){
         Deck testDeck;
@@ -15,7 +17,7 @@ public class DeckTest {
             if(testDeck.dealOneCard()!=null)
                 countOfCards++;
         }
-        Assert.assertEquals("Deck does not contain " + NUMBER_OF_CARDS + " cards", countOfCards, NUMBER_OF_CARDS);
+        Assert.assertEquals("Deck does not contain " + NUMBER_OF_CARDS + " cards!", countOfCards, NUMBER_OF_CARDS);
     }
 
     @Test
