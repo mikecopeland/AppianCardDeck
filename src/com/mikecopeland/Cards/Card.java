@@ -16,8 +16,4 @@ public class Card {
     public Suits getSuit(){
         return this.suit;
     }
-
-    public String toString(){
-        return this.getRank() + " of " + this.getSuit();
-    }
 }
