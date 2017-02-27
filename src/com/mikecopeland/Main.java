@@ -10,7 +10,7 @@ public class Main {
         deck.shuffle();
         do{
             Card card = deck.dealOneCard();
-            System.out.println(card.getRank() + " of " + card.getSuit());
+            System.out.println(card);
         }
         while(!deck.isEmpty());
     }

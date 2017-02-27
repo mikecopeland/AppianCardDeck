@@ -11,6 +11,7 @@ import java.util.Random;
 
 public class Deck implements Shuffleable, Dealable {
     private LinkedList<Card> cards = new LinkedList<>();
+    private final int TOP_OF_DECK = 0;
 
     public Deck() {
         for (Ranks r : Ranks.values()) {
@@ -24,7 +25,20 @@ public class Deck implements Shuffleable, Dealable {
     public @Nullable
     Card dealOneCard(){
         if(!this.isEmpty()) {
-            return cards.pop();
+            return dealOneCard(TOP_OF_DECK);
+        }
+        else{
+            return null;
+        }
+    }
+
+    @Override
+    public @Nullable
+    Card dealOneCard(int idx){
+        if(!this.isEmpty() && this.cards.size()>idx) {
+            Card returnedCard = cards.get(idx);
+            cards.remove(idx);
+            return returnedCard;
         }
         else{
             return null;
