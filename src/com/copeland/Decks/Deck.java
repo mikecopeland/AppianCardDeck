@@ -1,9 +1,9 @@
 package com.copeland.Decks;
 
 
-import com.copeland.Decks.Cards.Card;
-import com.copeland.Decks.Cards.Ranks;
-import com.copeland.Decks.Cards.Suits;
+import com.copeland.Cards.Card;
+import com.copeland.Cards.Ranks;
+import com.copeland.Cards.Suits;
 import com.sun.istack.internal.Nullable;
 
 import java.util.LinkedList;

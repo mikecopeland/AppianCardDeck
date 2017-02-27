@@ -1,4 +1,4 @@
-package com.copeland.Decks.Cards;
+package com.copeland.Cards;
 
 public class Card {
     private final Ranks rank;

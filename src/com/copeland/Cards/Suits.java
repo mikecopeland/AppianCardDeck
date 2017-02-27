@@ -1,4 +1,4 @@
-package com.copeland.Decks.Cards;
+package com.copeland.Cards;
 
 public enum Suits{
     Clubs,
