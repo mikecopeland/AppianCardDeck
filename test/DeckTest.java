@@ -20,7 +20,7 @@ public class DeckTest {
 
     @Test
     public void testShuffle() {
-        final int ACCEPTABLE_NUM_UNSHUFFLED_CARDS = 26;
+        final int ACCEPTABLE_NUM_UNSHUFFLED_CARDS = 26; //half of the deck
         int numUnshuffledCards = 0;
         Deck unshuffledDeck = new Deck();
         Deck shuffledDeck = new Deck();
@@ -32,7 +32,7 @@ public class DeckTest {
                 numUnshuffledCards++;
             }
         }
-        Assert.assertTrue("There are " + numUnshuffledCards + " unshuffled cards!", numUnshuffledCards<=ACCEPTABLE_NUM_UNSHUFFLED_CARDS);
+        Assert.assertTrue("There are " + numUnshuffledCards + " unshuffled cards! The acceptable number is " + ACCEPTABLE_NUM_UNSHUFFLED_CARDS + "." , numUnshuffledCards<=ACCEPTABLE_NUM_UNSHUFFLED_CARDS);
     }
 
 }
