@@ -1,14 +1,14 @@
-package com.copeland.CardDeck;
+package com.copeland.Decks;
 
 
+import com.copeland.Decks.Cards.Card;
+import com.copeland.Decks.Cards.Ranks;
+import com.copeland.Decks.Cards.Suits;
 import com.sun.istack.internal.Nullable;
 
 import java.util.LinkedList;
 import java.util.Random;
 
-/**
- * Created by CopelandM on 2/27/2017.
- */
 public class Deck implements Shuffleable, Dealable {
     private LinkedList<Card> cards = new LinkedList<>();
 

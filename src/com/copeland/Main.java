@@ -1,7 +1,7 @@
 package com.copeland;
 
-import com.copeland.CardDeck.Card;
-import com.copeland.CardDeck.Deck;
+import com.copeland.Decks.Cards.Card;
+import com.copeland.Decks.Deck;
 
 public class Main {
 

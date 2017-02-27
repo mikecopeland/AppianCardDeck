@@ -1,8 +1,5 @@
-package com.copeland.CardDeck;
+package com.copeland.Decks.Cards;
 
-/**
- * Created by CopelandM on 2/27/2017.
- */
 public enum Ranks {
     Two,
     Three,

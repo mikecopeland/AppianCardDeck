@@ -1,14 +1,10 @@
-package com.copeland.CardDeck;
+package com.copeland.Decks.Cards;
 
-
-/**
- * Created by CopelandM on 2/27/2017.
- */
 public class Card {
     private final Ranks rank;
     private final Suits suit;
 
-    protected Card(Ranks r, Suits s){
+    public Card(Ranks r, Suits s){
         this.rank = r;
         this.suit = s;
     }
