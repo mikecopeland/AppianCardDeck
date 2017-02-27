@@ -54,7 +54,7 @@ public class Deck implements Shuffleable, Dealable {
         int count = 0;
         SecureRandom random = new SecureRandom();
         int sizeofDeck = cards.size();
-        int range = sizeofDeck-count;
+        int range = sizeofDeck-count-1; //-1 because we don't need to shuffle the last card
         while(range>0){
             //pick random card from deck, move it to end
             int randIdx = random.nextInt(range);
