@@ -9,8 +9,7 @@ public class Main {
         Deck deck = new Deck();
         deck.shuffle();
         do{
-            Card card = deck.dealOneCard();
-            System.out.println(card);
+            System.out.println(deck.dealOneCard());
         }
         while(!deck.isEmpty());
     }
