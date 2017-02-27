@@ -1,4 +1,4 @@
-package com.copeland.Cards;
+package com.mikecopeland.Cards;
 
 public class Card {
     private final Ranks rank;
@@ -15,5 +15,9 @@ public class Card {
 
     public Suits getSuit(){
         return this.suit;
+    }
+
+    public String toString(){
+        return this.getRank() + " of " + this.getSuit();
     }
 }

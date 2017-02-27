@@ -1,7 +1,7 @@
-package com.copeland;
+package com.mikecopeland;
 
-import com.copeland.Cards.Card;
-import com.copeland.Decks.Deck;
+import com.mikecopeland.Cards.Card;
+import com.mikecopeland.Decks.Deck;
 
 public class Main {
 
@@ -10,7 +10,7 @@ public class Main {
         deck.shuffle();
         do{
             Card card = deck.dealOneCard();
-            System.out.println(card.getRank() + " of " + card.getSuit());
+            System.out.println(card);
         }
         while(!deck.isEmpty());
     }

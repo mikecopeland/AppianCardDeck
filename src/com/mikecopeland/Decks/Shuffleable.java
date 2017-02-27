@@ -1,4 +1,4 @@
-package com.copeland.Decks;
+package com.mikecopeland.Decks;
 
 interface Shuffleable {
     void shuffle();

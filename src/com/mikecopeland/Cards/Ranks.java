@@ -1,4 +1,4 @@
-package com.copeland.Cards;
+package com.mikecopeland.Cards;
 
 public enum Ranks {
     Two,
