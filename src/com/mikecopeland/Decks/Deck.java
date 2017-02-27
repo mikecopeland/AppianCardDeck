@@ -7,7 +7,7 @@ import com.mikecopeland.Cards.Suits;
 import com.sun.istack.internal.Nullable;
 
 import java.util.LinkedList;
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class Deck implements Shuffleable, Dealable {
     private LinkedList<Card> cards = new LinkedList<>();
@@ -52,7 +52,7 @@ public class Deck implements Shuffleable, Dealable {
     @Override
     public void shuffle(){
         int count = 0;
-        Random random = new Random();
+        SecureRandom random = new SecureRandom();
         int sizeofDeck = cards.size();
         int range = sizeofDeck-count;
         while(range>0){
