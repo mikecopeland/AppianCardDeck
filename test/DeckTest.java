@@ -17,6 +17,7 @@ public class DeckTest {
                 countOfCards++;
         }
         Assert.assertEquals("Deck does not contain " + NUMBER_OF_CARDS + " cards!", countOfCards, NUMBER_OF_CARDS);
+        Assert.assertNull("Attempt to deal card from empty deck does not yield null." , testDeck.dealOneCard());
     }
 
     @Test
