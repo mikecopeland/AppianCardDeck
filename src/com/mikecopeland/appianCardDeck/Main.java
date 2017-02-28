@@ -1,7 +1,6 @@
-package com.mikecopeland;
+package com.mikecopeland.appianCardDeck;
 
-import com.mikecopeland.Cards.Card;
-import com.mikecopeland.Decks.Deck;
+import com.mikecopeland.appianCardDeck.Decks.Deck;
 
 public class Main {
 

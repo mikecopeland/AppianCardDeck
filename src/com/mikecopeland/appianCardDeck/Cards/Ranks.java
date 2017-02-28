@@ -1,4 +1,4 @@
-package com.mikecopeland.Cards;
+package com.mikecopeland.appianCardDeck.Cards;
 
 public enum Ranks {
     Two,

@@ -1,6 +1,6 @@
-package com.mikecopeland.Decks;
+package com.mikecopeland.appianCardDeck.Decks;
 
-import com.mikecopeland.Cards.Card;
+import com.mikecopeland.appianCardDeck.Cards.Card;
 import com.sun.istack.internal.Nullable;
 
 interface Dealable {

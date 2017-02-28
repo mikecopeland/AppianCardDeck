@@ -1,9 +1,9 @@
-package com.mikecopeland.Decks;
+package com.mikecopeland.appianCardDeck.Decks;
 
 
-import com.mikecopeland.Cards.Card;
-import com.mikecopeland.Cards.Ranks;
-import com.mikecopeland.Cards.Suits;
+import com.mikecopeland.appianCardDeck.Cards.Card;
+import com.mikecopeland.appianCardDeck.Cards.Ranks;
+import com.mikecopeland.appianCardDeck.Cards.Suits;
 import com.sun.istack.internal.Nullable;
 
 import java.util.LinkedList;

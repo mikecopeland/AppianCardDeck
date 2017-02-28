@@ -1,6 +1,6 @@
-import com.mikecopeland.Cards.Ranks;
-import com.mikecopeland.Cards.Suits;
-import com.mikecopeland.Decks.Deck;
+import com.mikecopeland.appianCardDeck.Cards.Ranks;
+import com.mikecopeland.appianCardDeck.Cards.Suits;
+import com.mikecopeland.appianCardDeck.Decks.Deck;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -17,6 +17,7 @@ public class DeckTest {
                 countOfCards++;
         }
         Assert.assertEquals("Deck does not contain " + NUMBER_OF_CARDS + " cards!", countOfCards, NUMBER_OF_CARDS);
+        Assert.assertNull("Attempt to deal card from empty deck does not yield null." , testDeck.dealOneCard());
     }
 
     @Test
