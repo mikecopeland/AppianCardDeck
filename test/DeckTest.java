@@ -4,7 +4,6 @@ import com.mikecopeland.Decks.Deck;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.security.SecureRandom;
 
 public class DeckTest {
     private final int NUMBER_OF_CARDS = Ranks.values().length * Suits.values().length;
@@ -22,15 +21,13 @@ public class DeckTest {
 
     @Test
     public void testShuffle() {
-        final int ACCEPTABLE_NUM_UNSHUFFLED_CARDS = 26; //half of the deck
+        final int ACCEPTABLE_NUM_UNSHUFFLED_CARDS = 10;
         int numUnshuffledCards = 0;
         Deck unshuffledDeck = new Deck();
         Deck shuffledDeck = new Deck();
         shuffledDeck.shuffle();
         for(int i=0; i<NUMBER_OF_CARDS; i++){
-            SecureRandom random = new SecureRandom();
-            int randomIndex = random.nextInt(NUMBER_OF_CARDS);
-            if(unshuffledDeck.dealOneCard(randomIndex) == shuffledDeck.dealOneCard(randomIndex)){
+            if(unshuffledDeck.dealOneCard() == shuffledDeck.dealOneCard()){
                 numUnshuffledCards++;
             }
         }
