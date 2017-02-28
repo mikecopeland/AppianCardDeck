@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/shuffle.iml" filepath="$PROJECT_DIR$/shuffle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/appianCardDeck.iml" filepath="$PROJECT_DIR$/appianCardDeck.iml" />
     </modules>
   </component>
 </project>
